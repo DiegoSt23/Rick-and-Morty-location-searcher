@@ -123,6 +123,9 @@ button:hover {
   .location-info {
     flex-direction: column;
   }
+  .App-header {
+    background-size:cover;
+  }
 }
 @media screen and (max-width: 576px) {
   .sub-container2 {
@@ -131,6 +134,11 @@ button:hover {
   }
   .sub-container1 {
     width: 60%;
+  }
+  .relative {
+    width: 80%;
+    top: 100px;
+    margin-top: 50px;
   }
 }
 
