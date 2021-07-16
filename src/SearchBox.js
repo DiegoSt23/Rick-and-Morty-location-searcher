@@ -10,7 +10,7 @@ const SearchBox = ({search}) => {
                 <p>There are 108 locations in the Rick and Morty universe, please search by number.</p>
             </div>           
             <input value={value} onChange={e => {setValue(e.target.value)}}/>
-            <button onClick={() => {search(value)}}>SEARCH</button>                        
+            <button onClick={() => {search(value)}}>SEARCH</button>  
         </div>        
     )
 }

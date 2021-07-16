@@ -39,6 +39,8 @@ button {
   background-color: rgb(187, 247, 67);
   border: solid 2px rgb(187, 247, 67); 
   padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 button:hover {
   cursor: pointer;
@@ -138,6 +140,14 @@ button:hover {
     top: 100px;
     margin-top: 50px;
   }
+}
+
+.buttons {
+  margin-bottom: 30px;
+}
+
+.current-button {
+  border: 5px solid turquoise;
 }
 
 
