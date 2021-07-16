@@ -10,7 +10,7 @@ const Pagination = ({pagesNumber, onPagination}) => {
     const list = data.map((value, index) => (<button onClick={() => onPagination(index + 1)}> {index + 1} </button>));
 
     return (
-        <div>
+        <div className="buttons">
             {list}
         </div>
     ) 
