@@ -141,9 +141,14 @@ button:hover {
     margin-top: 50px;
   }
 }
-
-.buttons {
+.buttons-container {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
   margin-bottom: 30px;
+}
+.buttons {
+  margin-bottom: 10px;
 }
 
 
