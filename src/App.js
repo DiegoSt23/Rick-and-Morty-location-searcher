@@ -6,7 +6,7 @@ import ResidentContainer from './ResidentContainer';
 import Pagination from './Pagination';
 
 function App() {  
-
+  const [condition, setCondition] = useState(true)
   const [queryTerm, setQueryTerm] = useState(Math.floor(Math.random()*108));
   const [worldId, setWolrdId] = useState("");
   const [name, setName] = useState("");
@@ -44,16 +44,18 @@ function App() {
   const search = (query) => {
     if(query > 0 && query <= 108) {
       setQueryTerm(query)
+      setCondition(true)
     } else {
-      alert("Please enter a valid number")
-    }      
+      setCondition(false)  
+      console.log("hey!")      
+    }          
   };
 
   return (
     <div className="App">
       <header className="App-header">
         <img src="https://cdn140.picsart.com/271010551004211.png?type=webp&to=min&r=640" alt="logo"  className="relative"></img>
-        <SearchBox search={search}/>   
+        <SearchBox search={search} condition={condition}/>         
         <LocationContainer worldId={worldId} name={name} type={type} dimension={dimension} population={population}/> 
         <ResidentContainer residents={residents} currentPage={currentPage}/>
         <Pagination pagesNumber={pages} onPagination={handlePagination}/>
